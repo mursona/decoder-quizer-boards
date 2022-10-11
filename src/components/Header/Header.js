@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import logo from '../../logo/logo.png';
+import logo from '../../images/logo.png';
 import Link from '../Link/Link';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
     const routes = [
         { id: 1, name: 'Home', path: '/home' },
-        { id: 2, name: 'Topics', path: '/topics' },
-        { id: 3, name: 'Statistics', path: '/statistics' },
-        { id: 4, name: 'Blog', path: '/blog' },
+        { id: 2, name: 'Statistics', path: '/statistics' },
+        { id: 3, name: 'Blog', path: '/blog' },
     ]
     return (
         <div>
@@ -25,13 +24,14 @@ const Header = () => {
                 <img src={logo} alt="" />
                 <p className='text-blue-300 font-bold text-3xl'>DECODER</p>
                 </div>
-                <ul className={`md:flex w-full justify-end absolute md:static duration-500 ease-in ${open ? 'top-1 ml-10' : 'top-[-280px]'}`}>
+                <ul className={`md:flex w-full justify-end absolute md:static duration-500 ease-in ${open ? 'bg-purple-50 top-1 ml-10' : 'top-[-280px]'}`}>
                 
                     {
                         routes.map(route => <Link key={route.id} route={route}></Link>)
                     }
                 </ul>
                 </nav>
+                
         </div>
 );
 };
