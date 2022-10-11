@@ -33,7 +33,7 @@ const Header = () => {
                 </div>
                 <nav className={`md:flex w-full justify-end absolute font-semibold text-lg text-sky-500 md:static duration-500 ease-in ${open ? 'bg-purple-50 top-24' : 'top-[-280px]'}`}>
 
-                    <NavLink to="/home" style={({ isActive }) => (isActive ? activeStyle : unactiveStyle)} >Home</NavLink>
+                    <NavLink to="/home" style={({ isActive }) => (isActive ? activeStyle : unactiveStyle)}>Home</NavLink>
                     <NavLink to="/statistics" style={({ isActive }) => (isActive ? activeStyle : unactiveStyle)}>Statistics</NavLink>
                     <NavLink to="/blog" style={({ isActive }) => (isActive ? activeStyle : unactiveStyle)}>Blog</NavLink>
                 </nav>
