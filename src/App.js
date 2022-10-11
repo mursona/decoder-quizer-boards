@@ -1,5 +1,5 @@
-import { Outlet } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog/Blog';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header></Header>  
       <Home></Home>
-      {/* <Outlet></Outlet>  */}
+      <Blog></Blog>
     </div>
   );
 }
