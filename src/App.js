@@ -1,11 +1,10 @@
-import logo from '././logo/logo.png';
 import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <img src={logo} alt="" />
-      <h1>Quiz Decoder</h1>
+      <Header></Header>    
     </div>
   );
 }
