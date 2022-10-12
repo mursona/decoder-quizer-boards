@@ -19,15 +19,15 @@ const Header = () => {
       };
     return (
         <div>
-            <nav className='bg-purple-100 w-full relative flex mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 align-middle justify-between'>
+            <nav className='bg-purple-100 w-full relative flex mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl sm:px-0 md:px-24 lg:px-8 align-middle justify-between'>
 
-            <div onClick={() => setOpen(!open)} className="text-sky-500 h-6 w-8 ml-4 my-8 md:hidden">
+            <div onClick={() => setOpen(!open)} className="text-sky-500 h-6 w-8 my-8 md:hidden">
              {
                         open ? <XMarkIcon /> : <Bars3Icon />
              }
             </div>
 
-                <div className='relative flex items-center lg:ml-2 sm:mr-4 py-4'>
+                <div className='relative flex items-center mx-auto sm:max-w-xl md:max-w-full'>
                 <img src={logo} alt="" />
                 <p className='text-blue-300 font-bold text-3xl'>DECODER</p>
                 </div>

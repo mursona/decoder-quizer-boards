@@ -5,6 +5,7 @@ import Main from "./layouts/Main";
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Quizes from './components/Quizes/Quizes';
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
           );
         },
         path: "/home/:topicId",
-        element: 90,
+        element: <Quizes></Quizes>,
       },
     ],
   },

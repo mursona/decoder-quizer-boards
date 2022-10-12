@@ -6,7 +6,8 @@ import context from '../../images/context-api.png'
 const Blog = () => {
     return (
     <div>
-    <div className="bg-slate-200 mt-10 w-full flex flex-col sm:flex-col md:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
+        <h2 className='mt-6 underline font-bold text-blue-900 text-3xl'>Top Three Question of React</h2>
+    <div className="bg-slate-200 mt-10 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
         <div className='bg-red-50'>
             <img src={router} alt="" />
         </div>
@@ -18,7 +19,7 @@ const Blog = () => {
           <br />At its heart, React Router is a state container for the current location , or URL. It keeps track of the location and renders different Route s as it changes, and it also gives you tools to update the location using Link s and the history API.</p>
         </div>
     </div>
-    <div className="bg-slate-200 mt-10 w-full flex flex-col sm:flex-col md:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
+    <div className="bg-slate-200 mt-10 w-full flex sm:flex-col md:flex-col lg:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
         <div className="container flex flex-col items-center pl-4 mx-auto text-center md:pl-10 text-gray-900">
             <h1 className="mt-20 text-5xl font-bold leading-none sm:text-4xl xl:max-w-3xl text-blue-900">
             How does context api work?
@@ -30,7 +31,7 @@ const Blog = () => {
             <img src={context} alt="" />
         </div>
     </div>
-    <div className="bg-slate-200 mt-10 w-full flex flex-col sm:flex-col md:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
+    <div className="bg-slate-200 mt-10 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between">
         <div className='bg-red-50'>
             <img src={hook} alt="" />
         </div>
