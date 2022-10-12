@@ -1,6 +1,9 @@
 # Getting Started with Create React App Quiz Crackerz
 
-This project is Educational Website
+This application is developed for educational purpose website - 
+* Fetch quiz from programming hero open api
+* Question pool
+* Statistics of total question and blog question answer site
 
 ## Live Site Url
 
