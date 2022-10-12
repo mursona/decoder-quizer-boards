@@ -11,7 +11,7 @@ const Courses = ({topic}) => {
       color: "white",
     };
     return (
-      <div className='pb-2 bg-slate-50 mx-6 border border-4 rounded rounded-6'>
+      <div className='pb-2 bg-slate-50 mx-6 border-4 rounded rounded-6'>
         <div style={imgbg}><img src={logo} alt="" /></div>
         <div>
           <p className='text-blue-900 font-semibold mt-2'>Course Name: {name}</p>

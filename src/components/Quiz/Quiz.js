@@ -6,6 +6,7 @@ import Options from '../Options/Options';
 
 const Quiz = ({question}) => {
 
+
     const correctAnswer = question.correctAnswer;
     const qId = question.id;
     const qNum = qId.slice(23);
@@ -19,12 +20,12 @@ const Quiz = ({question}) => {
     };
 
     const handleCorrectWrong = (options) => {
+ 
         if (options === correctAnswer) {
             toast.success('Answer is Correct', {
                 position: toast.POSITION.TOP_CENTER,
                 autoClose:2500
             });
-            
         }
         else{
             toast.error('Answer is Wrong', {
@@ -35,11 +36,12 @@ const Quiz = ({question}) => {
     };
 
     return (
-        <div className='bg-sky-100 border border-4 rounded rounded-6 my-10 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between'>
+        <div className='bg-sky-100 border-4 rounded rounded-6 my-10 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl align-middle justify-between'>
         <div className='pb-2 mx-6'>
            <div>
             <p className='my-4 w-full flex flex-col sm:flex-col md:flex-row'>
-                Q{qNum} : {questionSlice}
+                <span className='font-bold text-blue-400'> Q{qNum}:</span> 
+                <span>{questionSlice}</span>
                     <button className='mx-2' onClick={toastAnswer}>
                     <EyeIcon className="text-center h-6 w-6 text-blue-500"/>
                     </button>
